@@ -1,0 +1,18 @@
+.top_head{line-height: 60px;}
+.top_desc{line-height: 40px;}
+.grid_divider {
+    position: relative;
+  }
+.grid_divider > [class*="col-"] {
+    position: relative;
+  }
+.grid_divider > [class*="col-"]:nth-child(n+2)::after {
+    content: "";
+    background-color: #8c8c8c;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    left: 2px;
+    height: auto;
+  }
